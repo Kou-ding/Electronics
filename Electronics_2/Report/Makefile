@@ -1,8 +1,8 @@
-TEX_MAIN = report.tex
+TEX_MAIN = main.tex
 
-all: report
+all: main
 
-report: $(TEX_MAIN)
+main: $(TEX_MAIN)
 	latexmk -pdf $(TEX_MAIN)
 
 clean:
